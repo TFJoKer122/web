@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheFoolComp.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="program.html" class="logo">TheFoolComp<span>.</span></a>
+    <nav class="navbar">
+        <a href="program.html">home</a>
+        <a href="mouse.html">Mouse</a>
+        <a href="keyboard.html">Keyboard</a>
+        <a href="headset.html">Headset</a>
+        <a href="contaxt.html">Help</a>
+    </nav>
+    <div class="icons">
+       <a href="#" class="fas fa-shopping-cart"></a>
+       <a href="login.html" class="fas fa-user"></a>
+
+    </div>
+</header>    
+<section class="home" id="home">
+    <div class="content">
+        <h3>Wecome to TheFoolComp.</h3>
+        <span>Here we sale the popular esports mouse ,keyboard and 
+            Headset/earphone 
+        </span>
+        <p>Hope u can find the things you need.</p>
+        <a href="#" class="btn">shop now</a>
+    </div>
+</section>
+<section class="products" id="products">
+    <h1 class="heading">Recommend <span>products</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="images/g502.png" alt="">
+                <div>
+                 <a href="mouse.html" class="cart-btn">Go to mouse</a>
+                </div>
+                <div class="content">
+                    <h3>G502</h3>
+                    <div class="price">$450</div>
+                </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/k100.png" alt="">
+                <div>
+                 <a href="keyboard.html" class="cart-btn">go to keyboard</a>
+                </div>
+                <div class="content">
+                    <h3>Corsair k100</h3>
+                    <div class="price">$1000</div>
+                </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/gprowireless.png" alt="">
+                <div>
+                 <a href="headset.html" class="cart-btn">Go to headset</a>
+                </div>
+                <div class="content">
+                    <h3>Gpro Wireless Headset</h3>
+                    <div class="price">$999</div>
+                </div>
+        </div>
+    </div> 
+
+
+
+</section>
+<button onclick="topFunction()" id="mybtn" title="Go to top">Top</button>
+<script>
+let mybutton = document.getElementById("mybtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
